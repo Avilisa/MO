@@ -38,7 +38,7 @@ public class Main {
         }
     }
 
-    public static double[] gausMethod(double[][] matrix, double[] f) {
+    public static double[] gaussMethod(double[][] matrix, double[] f) {
         double[][] clonedMatrix = matrix.clone();
         double[] clonedF = f.clone();
         for (int i = 0; i < SIZE; i++) {
@@ -126,7 +126,7 @@ public class Main {
         double[] f = getVector();
         System.out.println("Матрица:");
         printMatrix(matrix, f);
-        double[] calculatedX = gausMethod(matrix, f);
+        double[] calculatedX = gaussMethod(matrix, f);
         System.out.println("Ответ:");
         printMatrix(calculatedX);
     }
